@@ -17,10 +17,10 @@ for i in f:
 sor(A)
 for category,product,date,price_per,Count in A:
     B.append([product,Count])
+     dd[product] = Count
 c=0
 for i in B:
     c+=1
-    dd[i[0]]=i[1]
     print(f'назв породукта {i[0]} "кол во {i[1]}')
     if c==10:
         break
